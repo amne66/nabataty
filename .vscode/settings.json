@@ -1,0 +1,8 @@
+{
+"explorer.fileNesting.enabled": true,
+"explorer.fileNesting.expand": false,
+"explorer.fileNesting.patterns": {
+"package.json": "tsconfig.json, .gitignore, yarn.lock",
+"index.tsx": "reportWebVitals.ts, react-app-env.d.ts"
+}
+}
