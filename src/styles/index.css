@@ -130,3 +130,56 @@ color: #00AB52;
 }
 
 /* footer style */
+
+.footer{
+  justify-content: space-between;
+  background-color: var(--bg-1);
+  color:black;
+  display: flex;
+  flex-direction:row;
+  gap: 10%;
+  padding: 5%;
+  cursor: pointer;
+
+}
+ .logo-footer{
+  height: 60px;
+  width: 90px;
+}
+.text {
+  color:gray;
+  font-size: 16px;
+	list-style: none;
+  text-decoration: none;
+}
+.widet-title{
+  font-size:24px;
+  font-size: 900;
+}
+.footer-iocn{
+  gap:10px;
+  padding: 15px;
+  color:green;
+  display: flex;
+}
+.icon-Twitter:hover {
+  color: #f1f1f1;
+  background-color: #10421bd8;
+  border-radius: 6px;  
+}
+
+.icon-Instagram:hover {
+  color: #f1f1f1;
+  background-color: #065b18d8;
+  border-radius: 6px;
+}
+li > p:hover{
+  color:green;
+  
+}
+.footer-block4 .text-block4{
+  background-color: gray;
+padding: 20px;
+color: white;
+padding-left: 40px;
+}
