@@ -1,5 +1,6 @@
 import { FiSearch } from 'react-icons/fi';
 import { IoIosArrowDown, IoIosCart } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 export function Nav(){
     return <>
@@ -19,13 +20,13 @@ export function Nav(){
        <div className="dropdown-nav">
        <p className="dropbtn-nav">النباتات <IoIosArrowDown /></p>
        <div className="dropdown-content-nav">
-       <p>النباتات الداخلية</p>
-       <p>النباتات الخارجية</p>
+       <Link to={'/indoorplant'} ><p>النباتات الداخلية</p></Link>
+       <Link to={'/outdoorplant'} ><p>النباتات الخارجية</p></Link>
        </div>
        </div>
-       <p>مستلزمات زراعية </p>
-       <p>احواض نباتات</p>
+       <Link to={'/agricultural'} className='bottom-nav'><p>مستلزمات زراعية </p></Link>
+       <Link to={'/pots'} className='bottom-nav'><p>احواض نباتات</p></Link>
        <p>عروض الصيف</p>
       </div>
     </>
-}
+}        
