@@ -5,6 +5,7 @@ import Footer from './footer';
 
 
 
+
 interface LayoutProps {
 	children: ReactElement;
 }
