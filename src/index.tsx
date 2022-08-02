@@ -18,6 +18,7 @@ import { MyProfilePage } from './pages/profile';
 import { OutdoorPlantPage } from './pages/outdoorPlant';
 
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
