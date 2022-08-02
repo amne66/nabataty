@@ -252,124 +252,42 @@ padding-right: 50px;
 }
 
 /* profile style */
-.my-profile-h1{
-
-/* login style */
-.my-account-h1{
-  padding: 15px;
+.profile-super{
+  padding: 10px;
   background-color: #F7F7F7;
   text-align: center;
   margin-top: 0%;
-  border-bottom: 1px solid #ECECEC;
   font-family: 'Tajawal', sans-serif;
 }
 .profile-container{
-
-.login-container{
   display: flex;
-  gap: 8px;
-  padding: 5px 25px 5px 25px;
-  justify-content: center;
-  font-family: 'Tajawal', sans-serif;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 35%;
+  padding-bottom: 20px;
+
 }
 .profile-input{
-
-.sign-in{
-  display: flex;
-  flex-direction: column;
-  border-left: 1px solid #ECECEC;
-  padding-left: 8px;
-}
-
-.sign-up{
-  display: flex;
-  flex-direction: column;
-  padding-right: 5px;
-}
-
-.login-input{
-  padding: 0px 13px;
-  width: 425px;
-  height: 46px;
-  background-color: white;
+  padding: 0px 15px;
+  width: 420px;
+  height: 50px;
   border: 1px solid #DDDDDD;
 }
+.profile-checkbox {
+  line-height: 5.1;
+}
 .profile-btn{
-
-.login-btn{
   background-color: #1CA653;
   color: white;
-  width: 173px;
-  height: 46px;
-  font-size: 18px;
+  width: 170px;
+  height: 50px;
   justify-content: center;
-  justify-content: center;  
   align-items: center;
   display: flex;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
+  
 }
-.profile-btn:hover{
-  background-color: #188e47;
-}
-
-.login-btn:hover{
-  background-color: #188e47;
-}
-
-.vertical-line{
-  width: 1px;
-  background-color: #ECECEC;
-  height: 100%;
-}
-.profile-flex{
-
-.row-flex{
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.profile-title{
-  font-size: 24px;
-}
-.profile-text{
-  font-size: 18px;
-}
-
-.profile-pass:hover{
-  color: black;
-}
-
-/* checkbox */
-.form-profile {
-  font-family: system-ui, sans-serif;
-  font-weight: bold;
-  line-height: 1.1;
-
-.login-title{
-  font-size: 24px;
-}
-
-.login-text{
-  font-size: 18px;
-}
-
-.forget-pass{
-  color: #7A7A7A;
-  cursor: pointer;
-  font-size: 19px;
-}
-
-.forget-pass:hover{
-  color: black;
-}
-
-.link-password{
-  color: #777777;
-  font-size: 19px;
-}
-
 /* side menu style */
 .side-menu-container{
   display: flex;
@@ -542,4 +460,94 @@ gap: 10px;
 .product-price{
   display: flex;
   align-items: center;
+}
+/* login style */
+.my-account-h1{
+  padding: 15px;
+  background-color: #F7F7F7;
+  text-align: center;
+  margin-top: 0%;
+  border-bottom: 1px solid #ECECEC;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.login-container{
+  display: flex;
+  gap: 8px;
+  padding: 5px 25px 5px 25px;
+  justify-content: center;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.sign-in{
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ECECEC;
+  padding-left: 8px;
+}
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+.login-input{
+  padding: 0px 13px;
+  width: 425px;
+  height: 46px;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+}
+
+.login-btn{
+  background-color: #1CA653;
+  color: white;
+  width: 173px;
+  height: 46px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-btn:hover{
+  background-color: #188e47;
+}
+
+.vertical-line{
+  width: 1px;
+  background-color: #ECECEC;
+  height: 100%;
+}
+
+.row-flex{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.login-title{
+  font-size: 24px;
+}
+
+.login-text{
+  font-size: 18px;
+}
+
+.forget-pass{
+  color: #7A7A7A;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.forget-pass:hover{
+  color: black;
+}
+
+.link-password{
+  color: #777777;
+  font-size: 19px;
 }
