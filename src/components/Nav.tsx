@@ -10,7 +10,7 @@ export function Nav(){
       <div className="search-icon"><FiSearch/></div>
       </div>
       <div className='login-cart-btns'>
-        <div className="login-btn">تسجيل الدخول </div>
+        <div className="login-btn-nav">تسجيل الدخول </div>
         <div className="line-nav"> </div>
         <div className='cart-nav'>ر.س <IoIosCart size={20}/></div>
       </div>

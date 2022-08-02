@@ -28,6 +28,8 @@ nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  background-color: white;
+  border: 1px solid #DFDFDF;
 }
 .logo-nav{
   height: 65px;
@@ -186,6 +188,7 @@ padding: 20px;
 color: var(--white);
 padding-left: 40px;
 }
+
 .line-footer{
   height: 1px;
   width: 20%;
@@ -250,6 +253,9 @@ padding-right: 50px;
 
 /* profile style */
 .my-profile-h1{
+
+/* login style */
+.my-account-h1{
   padding: 15px;
   background-color: #F7F7F7;
   text-align: center;
@@ -258,6 +264,8 @@ padding-right: 50px;
   font-family: 'Tajawal', sans-serif;
 }
 .profile-container{
+
+.login-container{
   display: flex;
   gap: 8px;
   padding: 5px 25px 5px 25px;
@@ -265,6 +273,21 @@ padding-right: 50px;
   font-family: 'Tajawal', sans-serif;
 }
 .profile-input{
+
+.sign-in{
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ECECEC;
+  padding-left: 8px;
+}
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+.login-input{
   padding: 0px 13px;
   width: 425px;
   height: 46px;
@@ -272,12 +295,15 @@ padding-right: 50px;
   border: 1px solid #DDDDDD;
 }
 .profile-btn{
+
+.login-btn{
   background-color: #1CA653;
   color: white;
   width: 173px;
   height: 46px;
   font-size: 18px;
   justify-content: center;
+  justify-content: center;  
   align-items: center;
   display: flex;
   font-size: 18px;
@@ -286,16 +312,24 @@ padding-right: 50px;
 .profile-btn:hover{
   background-color: #188e47;
 }
+
+.login-btn:hover{
+  background-color: #188e47;
+}
+
 .vertical-line{
   width: 1px;
   background-color: #ECECEC;
   height: 100%;
 }
 .profile-flex{
+
+.row-flex{
   display: flex;
   align-items: center;
   gap: 4px;
 }
+
 .profile-title{
   font-size: 24px;
 }
@@ -312,4 +346,200 @@ padding-right: 50px;
   font-family: system-ui, sans-serif;
   font-weight: bold;
   line-height: 1.1;
+
+.login-title{
+  font-size: 24px;
+}
+
+.login-text{
+  font-size: 18px;
+}
+
+.forget-pass{
+  color: #7A7A7A;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.forget-pass:hover{
+  color: black;
+}
+
+.link-password{
+  color: #777777;
+  font-size: 19px;
+}
+
+/* side menu style */
+.side-menu-container{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Tajawal', sans-serif;
+  gap: 10px;
+  padding-top: 25px;
+}
+.sidemenu-text{
+  width: 114px;
+  height: 38px;
+  background-color: white;
+  color: #53565A;
+  display: flex;
+  justify-self:center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidemenu-text:hover{
+  color: #00AB52;
+}
+
+/* about style */
+.about-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block1-about{
+  background-image: url('https://nabataty.com/store/wp-content/uploads/2019/06/DSC_7671-1273x800.jpg');
+  font-family: 'Tajawal', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.about-p{
+  display: flex;
+  flex-direction: column;
+  max-width: 70ch;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-p>p{
+  color: white;
+  font-size: 21px;
+  padding: 0px 20px;
+}
+
+.about-p>h1{
+  font-size: 54px;
+  padding: 0px 20px;
+
+}
+
+.about-text1{
+  font-size: 25px;
+  color: #777777;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.about-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.circle-about{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 50%;
+  padding: 15px;
+  color: #C0C0C0;
+  border: 2px solid #C0C0C0;
+}
+
+.about-text2{
+  font-size: 19px;
+  color: #777777;
+  text-align: center;
+}
+/* indoor plant style */
+.product-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #DEDEDE;
+  border-radius: 10px;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-image{
+  height: 219px;
+  width: 183px;
+  border-radius: 10px 10px 0px 0px;
+}
+.product-info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-bottom: 10px;
+gap: 10px;
+}
+
+.plant-name{
+  color: #777777;
+  max-width: 18ch;
+  height: 40px;
+}
+
+.add-to-cart-btn{
+  background-color: #00AB52;
+  color: white;
+  padding: 2px;
+  font-size: 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.products-grid{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   gap: 12px;
+}
+
+.display-products{
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.indoor-plant-des{
+  color: #777777;
+  font-size: 18px;
+  padding-right: 18px;
+  max-width: 90ch;
+}
+
+.grey-back{
+  background-color: #F6F7F7;
+}
+
+.column-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price{
+  display: flex;
+  align-items: center;
 }

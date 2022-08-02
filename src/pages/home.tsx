@@ -1,5 +1,9 @@
 
+import { IndoorPlants } from "../components/IndoorPlants";
+import { Layout } from "../components/Layout";
+
 export function Home(){
-    return <div>Amani</div>
- 
+    return <Layout>
+        <IndoorPlants />
+    </Layout>
 }

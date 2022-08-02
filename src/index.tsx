@@ -1,13 +1,12 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
-import { About } from './pages/about';
+import { AboutPage } from './pages/about';
 import { AgriculturalSupplies } from './pages/agriculturalSupplies';
 import { Checkout } from './pages/checkout';
 import { Home } from './pages/home';
-import { IndoorPlant } from './pages/indoorPlant';
-import { Login } from './pages/login';
-import { OutdoorPlant } from './pages/outdoorPlant';
+import { IndoorPlantPage } from './pages/indoorPlant';
+import { LoginPage } from './pages/login';
 import { Pots } from './pages/pots';
 import { ProductDetails } from './pages/productDetails';
 import { SummerOffers } from './pages/summerOffers';
@@ -24,22 +23,22 @@ const root = ReactDOM.createRoot(
 root.render(
 <BrowserRouter>
 		<Routes>
-			<Route path='/' element={<Home />} />
-            <Route path='/indoorplant' element={<IndoorPlant />} />
+			      <Route path='/' element={<Home />} />
+            <Route path='/indoorplant' element={<IndoorPlantPage />} />
             <Route path='/outdoorplant' element={<OutdoorPlant />} />
             <Route path='/agricultural' element={<AgriculturalSupplies />} />
             <Route path='/pots' element={<Pots />} />
             <Route path='/details' element={<ProductDetails />} />
             <Route path='/offers' element={<SummerOffers />} />
-            <Route path='/about' element={<About />} />
             <Route path='/myaccount' element={<MyAccountPage />} />
             <Route path='/profile' element={<MyProfilePage />} />
 			<Route path='/myOrdres' element={<MyOrdersPage />} />
 			<Route path='/myaddress' element={<MyOrdersPage />} />
-			<Route path='/cart' element={<ViewCart />} />
-            <Route path='/checkout' element={<Checkout />} />
-			<Route path='/login' element={<Login />} />
       <Route path='/*' element={<NotfoundPage />} />
+            <Route path='/about' element={<AboutPage />} />
+			      <Route path='/cart' element={<ViewCart />} />
+            <Route path='/checkout' element={<Checkout />} />
+			      <Route path='/login' element={<LoginPage />} />
 		</Routes>
 	</BrowserRouter>
 );
