@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
       <div className="footer-block2">
         <span className="widet-title">مساعدة</span>
-
+        <div className="line-footer"> </div>
         <ul className='list-unstyled mb-0'>
           <li>
             <p  className='text'>
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
       <div className="footer-block3">
       <span className="widet-title">صفحات تهمك</span>
-
+      <div className="line-footer"> </div>
         <ul className='list-unstyled'>
           <li>
             <p className='text'>

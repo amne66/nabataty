@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
@@ -8,14 +7,14 @@ import { Checkout } from './pages/checkout';
 import { Home } from './pages/home';
 import { IndoorPlantPage } from './pages/indoorPlant';
 import { LoginPage } from './pages/login';
-import { MyAccount } from './pages/myAccount';
-import { MyOrders } from './pages/myOrders';
-import { OutdoorPlant } from './pages/outdoorPlant';
 import { Pots } from './pages/pots';
 import { ProductDetails } from './pages/productDetails';
-import { Profile } from './pages/profile';
 import { SummerOffers } from './pages/summerOffers';
 import { ViewCart } from './pages/viewCart';
+import { NotfoundPage } from './pages/notfound';
+import { MyAccountPage } from './pages/myAccount';
+import { MyOrdersPage } from './pages/myOrders';
+import { MyProfilePage } from './pages/profile';
 
 
 const root = ReactDOM.createRoot(
@@ -31,11 +30,12 @@ root.render(
             <Route path='/pots' element={<Pots />} />
             <Route path='/details' element={<ProductDetails />} />
             <Route path='/offers' element={<SummerOffers />} />
+            <Route path='/myaccount' element={<MyAccountPage />} />
+            <Route path='/profile' element={<MyProfilePage />} />
+			<Route path='/myOrdres' element={<MyOrdersPage />} />
+			<Route path='/myaddress' element={<MyOrdersPage />} />
+      <Route path='/*' element={<NotfoundPage />} />
             <Route path='/about' element={<AboutPage />} />
-            <Route path='/myaccount' element={<MyAccount />} />
-            <Route path='/profile' element={<Profile />} />
-			      <Route path='/myordres' element={<MyOrders />} />
-			      <Route path='/myaddress' element={<MyOrders />} />
 			      <Route path='/cart' element={<ViewCart />} />
             <Route path='/checkout' element={<Checkout />} />
 			      <Route path='/login' element={<LoginPage />} />

@@ -1,3 +1,5 @@
-export function MyAddress(){    
-    return <div></div>
+export function MyAddressPage(){    
+    return <div>
+        {/* <Layout><MyAddress/></Layout> */}
+    </div>
 }

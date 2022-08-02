@@ -1,3 +1,4 @@
+
 import { IndoorPlants } from "../components/IndoorPlants";
 import { Layout } from "../components/Layout";
 

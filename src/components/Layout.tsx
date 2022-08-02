@@ -6,6 +6,7 @@ import { Nav } from './Nav';
 
 
 
+
 interface LayoutProps {
 	children: ReactElement;
 }
