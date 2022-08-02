@@ -15,6 +15,7 @@ import { NotfoundPage } from './pages/notfound';
 import { MyAccountPage } from './pages/myAccount';
 import { MyOrdersPage } from './pages/myOrders';
 import { MyProfilePage } from './pages/profile';
+import { OutdoorPlant } from './pages/outdoorPlant';
 
 
 const root = ReactDOM.createRoot(
