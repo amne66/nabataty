@@ -16,6 +16,7 @@ import { MyAccountPage } from './pages/myAccount';
 import { MyOrdersPage } from './pages/myOrders';
 import { MyProfilePage } from './pages/profile';
 import { OutdoorPlant } from './pages/outdoorPlant';
+import { MyAddressPage } from './pages/myAddress';
 
 
 const root = ReactDOM.createRoot(
@@ -34,7 +35,7 @@ root.render(
             <Route path='/myaccount' element={<MyAccountPage />} />
             <Route path='/profile' element={<MyProfilePage />} />
 			<Route path='/myOrdres' element={<MyOrdersPage />} />
-			<Route path='/myaddress' element={<MyOrdersPage />} />
+			<Route path='/myaddress' element={<MyAddressPage />} />
       <Route path='/*' element={<NotfoundPage />} />
             <Route path='/about' element={<AboutPage />} />
 			      <Route path='/cart' element={<ViewCart />} />
