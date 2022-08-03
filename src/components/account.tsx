@@ -31,7 +31,7 @@ export default function MyAccount() {
 <div className="icon-user"> < AiOutlineUser size={30} /></div>
         <p> lamia</p>
         <Link to={'/myOrdres'}><a href="#">طلباتي</a></Link>
-        <Link to={'/'}><a href="#">عناويني</a></Link>
+        <Link to={'/myaddress'}><a href="#">عناويني</a></Link>
         <Link to={'/profile'}><a href="#">تفاصيل حسابي</a></Link>
         <Link to={'/'}> <a href="#">العروض الاسبوعية</a></Link>
 </div>

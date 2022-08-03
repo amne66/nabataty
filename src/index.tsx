@@ -15,6 +15,8 @@ import { NotfoundPage } from './pages/notfound';
 import { MyAccountPage } from './pages/myAccount';
 import { MyOrdersPage } from './pages/myOrders';
 import { MyProfilePage } from './pages/profile';
+
+import { MyAddressPage } from './pages/myAddress';
 import { OutdoorPlantPage } from './pages/outdoorPlant';
 
 
@@ -34,8 +36,8 @@ root.render(
             <Route path='/offers' element={<SummerOffers />} />
             <Route path='/myaccount' element={<MyAccountPage />} />
             <Route path='/profile' element={<MyProfilePage />} />
-			      <Route path='/myOrdres' element={<MyOrdersPage />} />
-			<Route path='/myaddress' element={<MyOrdersPage />} />
+			<Route path='/myOrdres' element={<MyOrdersPage />} />
+			<Route path='/myaddress' element={<MyAddressPage />} />
       <Route path='/*' element={<NotfoundPage />} />
             <Route path='/about' element={<AboutPage />} />
 			      <Route path='/cart' element={<ViewCart />} />

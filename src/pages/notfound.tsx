@@ -1,10 +1,9 @@
 import { Layout } from '../components/Layout';
-
+import { Notfound } from '../components/notfound';
 export function NotfoundPage() {
 	return (
 		<Layout>
-			<h3>404 page not found</h3>
-		
+		<Notfound></Notfound>
 		</Layout>
 		
 	);
