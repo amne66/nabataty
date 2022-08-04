@@ -3,14 +3,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import { AboutPage } from './pages/about';
 import { AgriculturalSupplies } from './pages/agriculturalSupplies';
-import { Checkout } from './pages/checkout';
+import {CheckoutPage} from './pages/checkout';
 import { Home } from './pages/home';
 import { IndoorPlantPage } from './pages/indoorPlant';
 import { LoginPage } from './pages/login';
 import { PotsPage } from './pages/pots';
 import { ProductDetails } from './pages/productDetails';
 import { SummerOffers } from './pages/summerOffers';
-import { ViewCart } from './pages/viewCart';
+import { ViewCartPage } from './pages/viewCart';
 import { NotfoundPage } from './pages/notfound';
 import { MyAccountPage } from './pages/myAccount';
 import { MyOrdersPage } from './pages/myOrders';
@@ -40,8 +40,8 @@ root.render(
 			<Route path='/myaddress' element={<MyAddressPage />} />
       <Route path='/*' element={<NotfoundPage />} />
             <Route path='/about' element={<AboutPage />} />
-			      <Route path='/cart' element={<ViewCart />} />
-            <Route path='/checkout' element={<Checkout />} />
+			      <Route path='/cart' element={<ViewCartPage />} />
+            <Route path='/checkout' element={<CheckoutPage />} />
 			      <Route path='/login' element={<LoginPage />} />
 		</Routes>
 	</BrowserRouter>
