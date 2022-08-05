@@ -18,6 +18,7 @@ import { MyProfilePage } from './pages/profile';
 
 import { MyAddressPage } from './pages/myAddress';
 import { OutdoorPlantPage } from './pages/outdoorPlant';
+import { IndoorDetailsPage } from './pages/indoorDetails';
 
 
 
@@ -43,6 +44,8 @@ root.render(
 			      <Route path='/cart' element={<ViewCart />} />
             <Route path='/checkout' element={<Checkout />} />
 			      <Route path='/login' element={<LoginPage />} />
+            <Route path='/indoordetails/:id' element={<IndoorDetailsPage />} />
+
 		</Routes>
 	</BrowserRouter>
 );

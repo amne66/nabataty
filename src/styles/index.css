@@ -612,3 +612,44 @@ gap: 10px;
     font-size: 90px;
     margin: 10px 0;
 }
+
+/*plant details */
+.plant-details-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plant-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-image-details{
+height: 510px;
+width: 510px;
+}
+
+.plant-img-info{
+  height: 103px;
+  width: 100px;
+}
+
+.plant-care-details{
+  display: flex;
+}
+
+.details-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-des-details{
+  display: flex;
+  align-items: center;
+}
+
+.image-desc-details{
+  height: 525px;
+  width: 450px;
+}
