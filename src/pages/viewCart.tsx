@@ -6,6 +6,7 @@ import { cartArr } from "../data/cart";
 import { iPlants } from "../data/indoorPlant";
 import { oPlants } from "../data/outdoorPlant";
 import { potsArr } from "../data/pots";
+import { iOffers } from "../data/summerOffers";
 import { toolsArr } from "../data/tools";
 
 export function ViewCartPage(){
@@ -40,13 +41,20 @@ if(type === 'pot'){
     price=searchIndex.price;
     imageUrl=searchIndex.imageUrl;
 }
-}else if('outdoor'){
+}else if(type ==='outdoor'){
   const searchIndex = oPlants.find((oudoorPlant) => oudoorPlant.id === id); 
   if(searchIndex){
     name = searchIndex.name;
     price=searchIndex.price;
     imageUrl=searchIndex.imageUrl;
-}}
+}}else if(type === 'offer'){
+  const searchIndex = iOffers.find((offer) => offer.id === id); 
+  if(searchIndex){
+    name = searchIndex.name;
+    price=searchIndex.newPrice;
+    imageUrl=searchIndex.imageUrl;}
+}
+
 if( name !== ''){
   cartArr.push({
     id: '22' ,

@@ -5,7 +5,7 @@ import { Layout } from "../components/Layout";
 export function Home(){
     return <Layout>
     <>
-    <img className="home-img" src="https://nabataty.com/store/wp-content/uploads/2022/07/Twitter-1.jpg" alt="" />
+    <Link to={'offers'}><img className="home-img" src="https://nabataty.com/store/wp-content/uploads/2022/07/Twitter-1.jpg" alt="" /> </Link>
     <div className="home-cards">
     
   <Link to={'/indoorplant'} className='noLine'><div className="home-card"> <img className="home-card-img" src="https://nabataty.com/store/wp-content/uploads/2021/06/gift-1-5-1.png" alt="" />

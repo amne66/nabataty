@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
 import { toolsArr } from "../data/tools";
@@ -10,7 +10,9 @@ export function ToolDetailPage(){
       let price= 0;
       let description= '';
       let imageUrl='';
+      let id ='';
      if(searchIndex){
+        id = searchIndex.id;
         name = searchIndex.name;
         price=searchIndex.price;
         description=searchIndex.description;
@@ -24,7 +26,7 @@ return <>
         <h1>{name}</h1>
          <div className="grey-details">{description}</div>
         <div className="product-price-details"> {price}ر.س شامل الضريبة </div>
-        <div className="add-to-cart-details">إضافة للسلة</div>
+        <Link to={`/cart/${'tool'}/${id}`} className='noLine'><div className="add-to-cart-details">إضافة للسلة</div> </Link>
     </div>
    </div>
    <hr />

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
 import { oPlants } from "../data/outdoorPlant";
@@ -13,7 +13,9 @@ export function OutdoorDetailsPage(){
       let temperature= '';
       let description= '';
       let imageUrl='';
+      let id='';
      if(searchIndex){
+        id = searchIndex.id;
         name = searchIndex.name;
         price=searchIndex.price;
         watering=searchIndex.watering;
@@ -50,7 +52,7 @@ return <>
             </div>
         </div>
         <div className="product-price-details"> {price}ر.س شامل الضريبة </div>
-        <div className="add-to-cart-details">إضافة للسلة</div>
+        <Link to={`/cart/${'outdoor'}/${id}`} className='noLine'><div className="add-to-cart-details">إضافة للسلة</div> </Link>
     </div>
    </div>
    <hr />
