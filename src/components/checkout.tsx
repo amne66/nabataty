@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { cartArr } from "../data/cart";
+import { OrderDetails } from "./OrderDetails";
 
 export default function Checkout() {
+    let sum = 0;
+    for (let i = 0; i < cartArr.length; i++) {
+        sum += cartArr[i].price;}   
+    const cartDev = cartArr.map((carts) => <OrderDetails cart={carts} />);
     return (  
         <><div className="bill-container">
             <div className="bill-form">
@@ -36,14 +42,13 @@ export default function Checkout() {
                 <h4 className="checkout-text">المجموع</h4>
                 </div>
                 <div className="line-checkout"></div>
-                <div className="checkout-title">
-                <h4 className="checkout-text">فيلوديندرون سلفر  × 1</h4>
-                <h4 className="checkout-text">52 ر.س (شامل ضريبة القيمة المضافة)</h4>
+                <div>    
+                {cartDev}
                 </div>
                 <div className="line-checkout"></div>
                 <div className="checkout-title">
                 <h4 className="checkout-text">المجموع</h4>
-                <h4 className="checkout-text">52 ر.س (شامل ضريبة القيمة المضافة)</h4>
+                <h4 className="checkout-text">{sum} ر.س (شامل ضريبة القيمة المضافة)</h4>
                 </div>
                 <div className="line-checkout"></div>
                 <div className="checkout-title">
@@ -52,7 +57,7 @@ export default function Checkout() {
                 </div>
                 <div className="checkout-title">
                 <h4 className="checkout-text">الإجمالي	</h4>
-                <h4 className="checkout-text">52 ر.س (شامل ضريبة القيمة المضافة)</h4>
+                <h4 className="checkout-text">{sum} ر.س (شامل ضريبة القيمة المضافة)</h4>
                 </div>
                 <div className="line-checkout"></div>
                 <label className="checkout-checkbox">

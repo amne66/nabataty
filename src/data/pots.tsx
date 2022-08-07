@@ -12,7 +12,7 @@ export const potsArr: IPots[] = [
     id: '1',
     name: 'مركن ري ذاتي مستطيل طولي رمادي فاتح كبير',
     price:380,
-	description: '',
+	description: "يحتوي على مؤشر يعرض كمية الماء الموجودة في المركن لتقوم بتعبئة المركن بالماء عند وصول المؤشر للحد الأدنى.",
     imageUrl:'https://nabataty.com/store/wp-content/uploads/2020/04/832-768x768.jpg',
     },
     {
