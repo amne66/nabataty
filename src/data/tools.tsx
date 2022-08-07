@@ -23,10 +23,10 @@ export const toolsArr: ITools[] = [
 },
 {
     id: '3',
-    name: '',
-	price: 0,
-	description: '',
-    imageUrl:'',
+    name: 'تربة زراعية بوتنج سويل للنباتات الخارجية',
+	price: 29,
+	description: 'تربة زراعية بوتنج سويل للنباتات الخارجية بسعة ٢٠ لتر',
+    imageUrl:'https://nabataty.com/store/wp-content/uploads/2019/10/00539.jpg',
 },
 {
     id: '4',
