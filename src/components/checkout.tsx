@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { cartArr } from "../data/cart";
 import { OrderDetails } from "./OrderDetails";
 
@@ -67,7 +68,7 @@ export default function Checkout() {
               <input type="checkbox" name="checkbox-profile" />
               لقد قرأتُ الشروط والأحكام وأوافق عليها  *
                </label>
-                <div className="checkout-btn">ارسال الطلب</div>
+               <Link to={'/bill'} className="checkout-btn"><div >ارسال الطلب</div></Link>
             </div>
         </div></>
     );

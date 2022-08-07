@@ -55,6 +55,7 @@ nav{
   top: 0px;
   background-color: white;
   border: 1px solid #DFDFDF;
+  
 }
 .logo-nav{
   height: 65px;
@@ -112,6 +113,7 @@ display: flex;
   padding: 1px;
   background-color: #7D7D7D;
   color: #7D7D7D;
+  
 }
 
 .cart-nav{
@@ -556,6 +558,7 @@ gap: 10px;
 }
 
 .login-btn{
+  text-decoration:none;
   background-color: #1CA653;
   color: white;
   width: 173px;
@@ -917,4 +920,10 @@ padding: 2%;
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 10px;
+}
+
+/* bill */
+.titel-bill{
+padding: 15%;
+text-align: center;
 }

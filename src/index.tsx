@@ -19,6 +19,7 @@ import { MyProfilePage } from './pages/profile';
 import { MyAddressPage } from './pages/myAddress';
 import { OutdoorPlantPage } from './pages/outdoorPlant';
 import { IndoorDetailsPage } from './pages/indoorDetails';
+import { BillPage } from './pages/bill';
 import { OutdoorDetailsPage } from './pages/OutdoorDetails';
 import { PootDetailsPage } from './pages/PootDetailsPage';
 import { ToolDetailPage } from './pages/ToolDetails';
@@ -49,6 +50,7 @@ root.render(
             <Route path='/checkout' element={<CheckoutPage />} />
 			      <Route path='/login' element={<LoginPage />} />
             <Route path='/indoordetails/:id' element={<IndoorDetailsPage />} />
+            <Route path='/bill' element={<BillPage />} />
             <Route path='/outoordetails/:id' element={<OutdoorDetailsPage />} />
             <Route path='/pootdetails/:id' element={<PootDetailsPage />} />
             <Route path='/tooldetails/:id' element={<ToolDetailPage />} />
