@@ -71,9 +71,7 @@ export default function Footer() {
 
     </div><div className="footer-block4">
           <p className='text-block4'> 
-          جميع الحقوق محفوظة
-           متجر نباتاتي
-           🪴
+          الحقوق محفوظة 2022 © متجر نباتاتي 🌳   
           </p>
         </div>
       </>

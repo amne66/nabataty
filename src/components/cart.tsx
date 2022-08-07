@@ -2,11 +2,16 @@
 // import { Link } from "react-router-dom";
 
 import { TiDeleteOutline } from "react-icons/ti";
-import { Link } from "react-router-dom";
+import { ICart } from "../data/cart";
 
-export default function ViewCart() {
-    return (    
- <><div className="view-cart">
+interface ICartProps {
+	cart: ICart;
+}
+
+export default function ViewCart({cart}:ICartProps) {
+
+    return   <>
+    <div className="view-cart">
     <div className="prodact-contenr">                           
 <table>
   <tr>
@@ -18,35 +23,13 @@ export default function ViewCart() {
   </tr>
   <tr>
   <div className="icon-delete"> < TiDeleteOutline size={30} /></div>
-    <td><img className="cart-img" src="data:image/jpeg;base64,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" alt="img" /></td>
-    <td>52 ر.س </td>
+    <td><img className="cart-img" src={cart.imageUrl} alt="img" /></td>
+    <td>{cart.price} ر.س </td>
     <td>1</td>
-    <td>52 ر.س (شامل ضريبة القيمة المضافة)</td>
+    <td>{cart.price} ر.س (شامل ضريبة القيمة المضافة)</td>
   </tr>
 </table>
-<Link to={'/About'} className="continua-btn" ><div>متابعة التسوق</div></Link>
 </div>        
-</div><div className="sid-cart">
-<h2>إجمالي سلة المشتريات</h2>
- <div className="line-checkout"></div>
-<div className="total-cart">
-    <h4>المجموع</h4>
-    <h5>52 ر.س (شامل ضريبة القيمة المضافة)</h5>
 </div>
-<div className="line-checkout"></div>
-<div className="shinpping-cart">
-<h4>الشحن</h4>
-<h5>حساب تكلفة الشحن</h5>
-</div>
-<div className="line-checkout"></div>
-<div className="final-total">
-<h4>الإجمالي</h4>
-<h5>52 ر.س (يتضمن 7 ر.س ضريبة القيمة المضافة)</h5>
-</div>
-
-<Link to={'/Checkout'} className="cart-btn"><div >التقديم لإتمام الطلب</div></Link>
-            </div></>
-
-
-    );
+</>
 }
