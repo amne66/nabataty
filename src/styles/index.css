@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Tajawal', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,6 +17,33 @@ code {
   --black:black;
 
 }
+/* home page style */
+.home-img{
+  width:1263px ;
+  height: 583px;
+}
+
+.home-card{
+background-color: #F6F7F7;
+width: 179px;
+height: 162px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: black;
+}
+
+.home-cards{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* navbar style */
 nav{
   display: flex;
@@ -39,6 +64,19 @@ nav{
 display: flex;
 
 }
+
+.quantity-nav{
+  border-radius: 50%;
+  padding: 3px;
+  background-color: rgba(232, 211, 211, 0.9);
+  color: black;
+  font-size: small;
+  position: absolute;
+  margin-right: 192px;
+  margin-top: 0px;
+  font-weight: bolder;
+}
+
 .search-input{
   background-color: var(--background);
   border: 1px solid #E1E1E1;
@@ -108,7 +146,16 @@ color: var(--green);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   cursor: pointer;
+  text-decoration: none;
 }
+.noLine{
+  text-decoration: none;
+}
+
+.grey7{
+  color: #777777;
+}
+
 .dropdown-nav {
   position: relative;
   display: inline-block;
@@ -140,7 +187,7 @@ color: var(--green);
 
 .footer{
   justify-content: space-between;
-  background-color: var(--background);
+  background-color: white;
   color:var(--black);
   display: flex;
   flex-direction:row;
@@ -187,6 +234,7 @@ background-color: gray;
 padding: 20px;
 color: var(--white);
 padding-left: 40px;
+margin-bottom: 0%;
 }
 
 .line-footer{
@@ -309,6 +357,7 @@ padding-right: 50px;
   justify-self:center;
   align-items: center;
   cursor: pointer;
+  padding: 0px 15px;
 }
 
 .sidemenu-text:hover{
@@ -395,6 +444,7 @@ padding-right: 50px;
   gap: 8px;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .product-image{
@@ -464,6 +514,7 @@ gap: 10px;
 .product-price{
   display: flex;
   align-items: center;
+  color: black;
 }
 /* login style */
 .my-account-h1{
@@ -617,16 +668,20 @@ gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 22px;
+  font-family: 'Tajawal', sans-serif;
+  padding-top: 20px;
 }
 
 .plant-details{
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .plant-image-details{
-height: 510px;
-width: 510px;
+height: 555px;
+width: 555px;
 }
 
 .plant-img-info{
@@ -636,22 +691,76 @@ width: 510px;
 
 .plant-care-details{
   display: flex;
+  align-items: center;
 }
 
 .details-flex{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 49ch;
 }
 
 .plant-des-details{
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .image-desc-details{
   height: 525px;
-  width: 450px;
+  width: 555px;
+  padding: 0px 0px 0px 30px;
 }
+
+.black-details{
+  color: black;
+  font-size: 19px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: bold;
+}
+
+.grey-details{
+  color: #777777;
+  font-size: 19px;
+  font-family: 'Tajawal', sans-serif;
+}
+.product-price-details{
+  color: black;
+  font-size: 30px;
+}
+.add-to-cart-details{
+  background-color: #00AB52;
+  color: white;
+  padding: 2px;
+  font-size: 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  margin-top: 6px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.details-desc{
+  font-size: 19px;
+  color: #777777;
+  max-width: 60ch;
+}
+
+.details-h3{
+  font-size: 20px;
+  border-bottom: 4px solid #00AB52;
+  width: fit-content;
+  font-weight: bolder;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 30px;
+  margin-right: 50%;
+}
+
 /* cart */
 .view-cart{
    display: flex;
@@ -683,11 +792,10 @@ table, th, td {
   width: 180px;
   height: 46px;
   font-size: 18px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   cursor: pointer;
-
 }
 .continua-btn:hover{
   color: var(--white);
@@ -697,11 +805,6 @@ table, th, td {
 display: flex;
 flex-direction: column;
 color:var(--black);
-position: fixed;
-top: 15%;
-right: 70%;
-/* fix */
-position: absolute;
 }
 .total-cart{
 display: flex;
@@ -737,6 +840,19 @@ gap: 70px;
   background-color:#188e47;
   
 }
+
+.cart-flex{
+  display: flex;
+  gap: 16px;
+ 
+}
+
+.cart-flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* checkout */
 .bill-container{
   display: flex;
@@ -744,6 +860,7 @@ gap: 70px;
   padding: 5px 25px 80px 25px;
   justify-content: center;
   font-family: 'Tajawal', sans-serif;
+  padding-top: 40px;
 }
 .bill-input{
   padding: 0px 13px;

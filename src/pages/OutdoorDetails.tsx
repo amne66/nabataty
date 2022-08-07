@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
-import { iPlants } from "../data/indoorPlant";
+import { oPlants } from "../data/outdoorPlant";
 
-export function IndoorDetailsPage(){
+export function OutdoorDetailsPage(){
     const params:any = useParams();
-    const searchIndex = iPlants.find((plant) => plant.id === params.id); 
+    const searchIndex = oPlants.find((plant) => plant.id === params.id); 
       let name = '' ;
       let price= 0;
       let watering= '';
