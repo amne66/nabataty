@@ -9,7 +9,6 @@ import { IndoorPlantPage } from './pages/indoorPlant';
 import { LoginPage } from './pages/login';
 import { PotsPage } from './pages/pots';
 import { ProductDetails } from './pages/productDetails';
-import { SummerOffers } from './pages/summerOffers';
 import { ViewCartPage } from './pages/viewCart';
 import { NotfoundPage } from './pages/notfound';
 import { MyAccountPage } from './pages/myAccount';
@@ -23,6 +22,7 @@ import { BillPage } from './pages/bill';
 import { OutdoorDetailsPage } from './pages/OutdoorDetails';
 import { PootDetailsPage } from './pages/PootDetailsPage';
 import { ToolDetailPage } from './pages/ToolDetails';
+import { SummerOfferPage } from './pages/summerOffer';
 
 
 
@@ -38,7 +38,7 @@ root.render(
             <Route path='/agricultural' element={<AgriculturalSupplies />} />
             <Route path='/pots' element={<PotsPage />} />
             <Route path='/details' element={<ProductDetails />} />
-            <Route path='/offers' element={<SummerOffers />} />
+            <Route path='/offers' element={<SummerOfferPage />} />
             <Route path='/myaccount' element={<MyAccountPage />} />
             <Route path='/profile' element={<MyProfilePage />} />
 			<Route path='/myOrdres' element={<MyOrdersPage />} />
@@ -54,7 +54,7 @@ root.render(
             <Route path='/outoordetails/:id' element={<OutdoorDetailsPage />} />
             <Route path='/pootdetails/:id' element={<PootDetailsPage />} />
             <Route path='/tooldetails/:id' element={<ToolDetailPage />} />
-
+     
 
 		</Routes>
 	</BrowserRouter>

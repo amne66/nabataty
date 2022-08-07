@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { IPots } from "../data/pots";
-import { OutdoorPlantPage } from "../pages/outdoorPlant";
 
 interface IPOtProps {
 	pot: IPots;
@@ -18,5 +17,4 @@ export function Pot({pot}:IPOtProps){
     </>
 }
 
-// 
 

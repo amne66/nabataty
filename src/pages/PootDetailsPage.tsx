@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
 import { potsArr } from "../data/pots";
@@ -10,11 +10,13 @@ export function PootDetailsPage(){
       let price= 0;
       let description= '';
       let imageUrl='';
+      let id =''
      if(searchIndex){
         name = searchIndex.name;
         price=searchIndex.price;
         description=searchIndex.description;
         imageUrl=searchIndex.imageUrl;
+        id = searchIndex.id;
     }
 return <>
 <Nav></Nav>
@@ -24,7 +26,7 @@ return <>
         <h1>{name}</h1>
          <div className="grey-details">{description}</div>
         <div className="product-price-details"> {price}ر.س شامل الضريبة </div>
-        <div className="add-to-cart-details">إضافة للسلة</div>
+        <Link to={`/cart/${'pot'}/${id}`} className='noLine'><div className="add-to-cart-details">إضافة للسلة</div> </Link>
     </div>
    </div>
    <hr />

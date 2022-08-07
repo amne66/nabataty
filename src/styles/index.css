@@ -21,6 +21,7 @@ code {
 .home-img{
   width:1263px ;
   height: 583px;
+  cursor: pointer;
 }
 
 .home-card{
@@ -926,4 +927,19 @@ padding: 2%;
 .titel-bill{
 padding: 15%;
 text-align: center;
+}
+/* offers style */
+.line{
+  text-decoration: line-through;
+}
+.padding{
+  padding-top: 25px;
+}
+
+/* hide  display*/
+.hide{
+  display: none;
+}
+.display{
+  display: block;
 }
