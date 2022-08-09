@@ -14,7 +14,6 @@ import { NotfoundPage } from './pages/notfound';
 import { MyAccountPage } from './pages/myAccount';
 import { MyOrdersPage } from './pages/myOrders';
 import { MyProfilePage } from './pages/profile';
-
 import { MyAddressPage } from './pages/myAddress';
 import { OutdoorPlantPage } from './pages/outdoorPlant';
 import { IndoorDetailsPage } from './pages/indoorDetails';
@@ -23,6 +22,9 @@ import { OutdoorDetailsPage } from './pages/OutdoorDetails';
 import { PootDetailsPage } from './pages/PootDetailsPage';
 import { ToolDetailPage } from './pages/ToolDetails';
 import { SummerOfferPage } from './pages/summerOffer';
+import { Adminlogin } from './pages/loginAdmin';
+import { AdminPage } from './pages/AdminPage';
+
 
 
 
@@ -41,9 +43,9 @@ root.render(
             <Route path='/offers' element={<SummerOfferPage />} />
             <Route path='/myaccount' element={<MyAccountPage />} />
             <Route path='/profile' element={<MyProfilePage />} />
-			<Route path='/myOrdres' element={<MyOrdersPage />} />
-			<Route path='/myaddress' element={<MyAddressPage />} />
-      <Route path='/*' element={<NotfoundPage />} />
+			      <Route path='/myOrdres' element={<MyOrdersPage />} />
+			      <Route path='/myaddress' element={<MyAddressPage />} />
+            <Route path='/*' element={<NotfoundPage />} />
             <Route path='/about' element={<AboutPage />} />
 			      <Route path='/cart/:type/:id' element={<ViewCartPage />} />
             <Route path='/cart' element={<ViewCartPage />} />
@@ -54,8 +56,8 @@ root.render(
             <Route path='/outoordetails/:id' element={<OutdoorDetailsPage />} />
             <Route path='/pootdetails/:id' element={<PootDetailsPage />} />
             <Route path='/tooldetails/:id' element={<ToolDetailPage />} />
-     
-
+            <Route path='/LoginAdmin/' element={<Adminlogin />} />
+            <Route path='/AdminDashbord/' element={<AdminPage />} />
 		</Routes>
 	</BrowserRouter>
 );
