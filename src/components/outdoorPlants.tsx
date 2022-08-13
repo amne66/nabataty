@@ -3,7 +3,7 @@ import { OutdoorPLant } from "./outdoorPlant";
 
 
 export function OutdoorPLants(){
-    const outPlantDev = oPlants.map((oPlant) => <OutdoorPLant plant={oPlant} />);
+    const outPlantDev = oPlants.map((oPlant) => <OutdoorPLant />);
     return<>
     <div className="products-grid">
      {outPlantDev}

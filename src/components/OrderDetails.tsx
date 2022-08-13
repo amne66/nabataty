@@ -1,4 +1,4 @@
-import { ICart } from "../data/cart"
+import { ICart } from "./checkout";
 
 
 interface ICartProps {

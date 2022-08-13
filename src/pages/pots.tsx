@@ -1,5 +1,5 @@
 import { Layout } from "../components/Layout";
-import { Pots } from "../components/Pots";
+import { Pot } from "../components/Pot";
 import { Sidemenu } from "../components/Sidemenu";
 
 export function PotsPage(){ 
@@ -10,7 +10,7 @@ export function PotsPage(){
         <Sidemenu />
        <div className="column-flex">
        <p className="indoor-plant-des">مراكن و احواض مختلفة الاشكال والاحجام والمزايا، تشكيلة منوعة تناسب مختلف الاذواق</p>   
-        <Pots />
+        <Pot />
        </div>
     </div>
    </div>

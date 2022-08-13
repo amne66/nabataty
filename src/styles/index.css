@@ -186,6 +186,11 @@ color: var(--green);
   align-items: center;
 }
 
+.green:hover{
+  background-color: white;
+  color: var(--green);
+}
+
 /* footer style */
 
 .footer{

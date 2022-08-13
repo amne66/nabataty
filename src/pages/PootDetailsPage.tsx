@@ -10,12 +10,12 @@ export function PootDetailsPage(){
       let price= 0;
       let description= '';
       let imageUrl='';
-      let id =''
+      let id;
      if(searchIndex){
-        name = searchIndex.name;
-        price=searchIndex.price;
-        description=searchIndex.description;
-        imageUrl=searchIndex.imageUrl;
+        name = searchIndex.data.name;
+        price=searchIndex.data.price;
+        description=searchIndex.data.description;
+        imageUrl=searchIndex.data.imageUrl;
         id = searchIndex.id;
     }
 return <>

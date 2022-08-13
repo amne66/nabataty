@@ -1,4 +1,4 @@
-import { IndoorPlants } from "../components/IndoorPlants";
+import { IndoorPLant } from "../components/IndoorPlant";
 import { Layout } from "../components/Layout";
 import { Sidemenu } from "../components/Sidemenu";
 
@@ -10,7 +10,7 @@ export function IndoorPlantPage(){
         <Sidemenu />
        <div className="column-flex">
        <p className="indoor-plant-des">اضف لمسة جمال طبيعية لمكانك! من خلال مجموعة منوعة من نباتات الزينة الداخلية المجهزة في مراكن واحواض بالاضافة لنباتات داخلية كبيرة وصغيرة مزهرة</p>   
-        <IndoorPlants />
+        <IndoorPLant /> 
        </div>
     </div>
    </div>

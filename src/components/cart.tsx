@@ -2,14 +2,14 @@
 // import { Link } from "react-router-dom";
 
 import { TiDeleteOutline } from "react-icons/ti";
-import { ICart } from "../data/cart";
+import { ICart } from "./checkout";
 
 interface ICartProps {
 	cart: ICart;
 }
 
 export default function ViewCart({cart}:ICartProps) {
-
+  
     return   <>
     <div className="view-cart">
     <div className="prodact-contenr">                           
@@ -22,7 +22,7 @@ export default function ViewCart({cart}:ICartProps) {
     <td>المجموع</td>
   </tr>
   <tr>
-  <div className="icon-delete"> < TiDeleteOutline size={30} /></div>
+  <div className="icon-delete" > < TiDeleteOutline size={30} /></div>
     <td><img className="cart-img" src={cart.imageUrl} alt="img" /></td>
     <td>{cart.price} ر.س </td>
     <td>1</td>

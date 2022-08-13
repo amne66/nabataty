@@ -10,13 +10,13 @@ export function ToolDetailPage(){
       let price= 0;
       let description= '';
       let imageUrl='';
-      let id ='';
+      let id ;
      if(searchIndex){
         id = searchIndex.id;
-        name = searchIndex.name;
-        price=searchIndex.price;
-        description=searchIndex.description;
-        imageUrl=searchIndex.imageUrl;
+        name = searchIndex.data.name;
+        price=searchIndex.data.price;
+        description=searchIndex.data.description;
+        imageUrl=searchIndex.data.imageUrl;
     }
 return <>
 <Nav></Nav>

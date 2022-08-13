@@ -1,8 +1,32 @@
-import { Link } from "react-router-dom";
-import { cartArr } from "../data/cart";
-import { OrderDetails } from "./OrderDetails";
+import { addDoc,collection, getDocs, onSnapshot, query, where } from "firebase/firestore";
 
+import { Link } from "react-router-dom";
+import { OrderDetails } from "./OrderDetails";
+import { db } from "../firebaseSetup";
+import { getAuth } from "firebase/auth";
+
+export interface ICart {
+	id: any;
+    name: string;
+	price: number;
+    imageUrl:string;
+}
+
+export let cartArr: ICart[] = [];
 export default function Checkout() {
+    function order(){
+        const auth = getAuth();
+       const user = auth.currentUser;
+       if(user){
+        addDoc(collection(db, 'orders'),
+         {
+         cart:cartArr,
+         orderStaus:'جاري التنفيذ',
+         userEmail: user.email,   
+        })    
+     cartArr=[];}
+    }
+
     let sum = 0;
     for (let i = 0; i < cartArr.length; i++) {
         sum += cartArr[i].price;}   
@@ -68,7 +92,7 @@ export default function Checkout() {
               <input type="checkbox" name="checkbox-profile" />
               لقد قرأتُ الشروط والأحكام وأوافق عليها  *
                </label>
-               <Link to={'/bill'} className="checkout-btn"><div >ارسال الطلب</div></Link>
+               <Link to={'/bill'} className="checkout-btn noLine" onClick={order} ><div >ارسال الطلب</div></Link>
             </div>
         </div></>
     );

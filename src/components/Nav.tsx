@@ -1,7 +1,7 @@
 import { FiSearch } from 'react-icons/fi';
 import { IoIosArrowDown, IoIosCart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { cartArr } from '../data/cart';
+import { cartArr } from './checkout';
 
 export function Nav(){
   const quantity = cartArr.length;
@@ -28,8 +28,8 @@ export function Nav(){
        <div className="dropdown-nav">
        <p className="dropbtn-nav">النباتات <IoIosArrowDown /></p>
        <div className="dropdown-content-nav">
-       <Link to={'/indoorplant'} className="noLine" ><p>النباتات الداخلية</p></Link>
-       <Link to={'/outdoorplant'} className="noLine"><p>النباتات الخارجية</p></Link>
+       <Link to={'/indoorplant'} className="noLine" ><p className='green'>النباتات الداخلية</p></Link>
+       <Link to={'/outdoorplant'} className="noLine"><p className='green'>النباتات الخارجية</p></Link>
        </div>
        </div>
        <Link to={'/agricultural'} className='bottom-nav noLine'><p>مستلزمات زراعية </p></Link>
