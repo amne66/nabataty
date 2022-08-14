@@ -32,11 +32,11 @@ export default function LoginAdmin() {
                 <h4 className="login-text-admin">كلمة المرور</h4>
                 <input className="login-input-admin" type="password" onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                <Link to={'/AdminDashbord'} className="login-btn-admin"> 
-                <div>تسجيل الدخول</div>
+                <Link to={'/AdminDashbord'} className="noLine"> 
+                <div className="login-btn-admin">تسجيل الدخول</div>
                 </Link>
                 <div className="login-btn" onClick={handleSubmit}>تسجيل جديد</div>
-                <p className="forget-pass-admin">نسيت كلمة المرور؟</p>
+                {/* <p className="forget-pass-admin">نسيت كلمة المرور؟</p> */}
             </div>
 
       

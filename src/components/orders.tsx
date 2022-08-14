@@ -1,36 +1,26 @@
 import { getAuth } from "firebase/auth";
 import { AiOutlineUser } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { orders } from "../data/orders";
+import { IOrder, orders } from "../data/orders";
+import{IOrderProps} from "../data/orders"
+import ViewOrder from "./Order";
+import Order from "./Order";
 
 export default function MyOrders() {
 
-        let orderStaus = '' ;
-        let userEmail= ''; 
-        let b = 'لم يتم تنفيذ أي طلب بعد';
-        
-    
-        const auth = getAuth();
-        const user = auth.currentUser;
-    const searchIndex = orders.find((order) => order.data.userEmail === user?.email); 
-    if(searchIndex){
-        orderStaus = searchIndex.data.orderStaus;
-        userEmail =searchIndex.data.userEmail;
+    let b = 'لم يتم تنفيذ أي طلب بعد';         
+    const auth = getAuth();
+    const user = auth.currentUser;
+    const a = orders.filter((elem) => elem.data.userEmail === user?.email)    
+    const orderDev = a.map((orders: IOrderProps) => <ViewOrder order={orders.data} />);
+     if(a){
         b=''
-    }
-     
-     console.log(orders);
-     
-    console.log(user?.email)
-    console.log(searchIndex);
-    
-  
+     }
+
     return (
         <><h1 className="profile-super">حسـابي</h1><><div className="order-ontainer">
-            <div className="order-btn">تصُّفح المنتجات</div>
             <h4>{b}</h4>
-            <h4>{orderStaus}</h4>
-             <h4>{userEmail}</h4>
+            {orderDev}
         </div>
             <div className="sidenav-account">
                 <div className="icon-user"> <AiOutlineUser size={30} /></div>

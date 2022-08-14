@@ -22,7 +22,7 @@ export default function Checkout() {
          {
          cart:cartArr,
          orderStaus:'جاري التنفيذ',
-         userEmail: user.email,   
+         userEmail: user.email,  
         })    
      cartArr=[];}
     }

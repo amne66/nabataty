@@ -2,7 +2,9 @@ import React from 'react';
 
 import { FiTwitter } from "react-icons/fi";
 import {AiOutlineInstagram} from "react-icons/ai";
+
 export default function Footer() {
+  
   return (
       <><div className="footer">
       <div className="footer-block1">
