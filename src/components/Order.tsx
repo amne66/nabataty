@@ -11,7 +11,7 @@ export interface IOrderProps {
 export default function ViewOrder({order}:IOrderProps) {
   
     return   <>
-             <h4>{order.userEmail}</h4>
-            <h4>{order.orderStaus}</h4>
+             <h4 className="amani-order">{order.userEmail}</h4>
+            <h4 className="amani-order">{order.orderStaus}</h4>
 </>
 }

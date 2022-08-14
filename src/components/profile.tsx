@@ -29,8 +29,7 @@ export default function MyProfile() {
           
              </div>
   </>       <div className="sidenav-account">
-          <div className="icon-user"> <AiOutlineUser size={30} /></div>
-          <p> lamia</p>
+    <br /><br />
           <Link to={'/myOrdres'}><a href="g">طلباتي</a></Link>
           <Link to={'/myaddress'}><a href="g">عناويني</a></Link>
           <Link to={'/profile'}><a href="g">تفاصيل حسابي</a></Link>

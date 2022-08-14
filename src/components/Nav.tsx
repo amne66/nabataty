@@ -34,6 +34,7 @@ export function Nav(){
       <div className='login-cart-btns'>
         <Link to={'/login'} className='noLine grey7'><div className={gg}>تسجيل الدخول </div></Link>
       <Link to={'/offers'} className='noLine grey7'><div onClick={logout} className={aa}>تسجيل الخروج</div></Link>
+      <Link to={'/profile'} className='noLine grey7'><div onClick={logout} className={aa}> حسابي</div></Link>
 
         <div className="line-nav"> </div>
         <Link to={'/cart'} className="noLine grey7"><div className='cart-nav'>{sum}ر.س<IoIosCart size={20}/></div></Link>
