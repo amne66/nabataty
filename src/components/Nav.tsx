@@ -10,8 +10,10 @@ export function Nav(){
   const auth = getAuth();
   const user = auth.currentUser;
   const quantity = cartArr.length;
- 
-  const am = user?.email === undefined
+ const test =user?.email
+  const am =  test === undefined
+  console.log(am)
+  console.log(user?.email)
   const quantityClasses = quantity!==0  ? 'quantity-nav display' : 'hide';
   const gg = am  ? 'login-btn-nav display' : 'hide';
   const aa = am  ? 'hide' : 'login-btn-nav display';
@@ -31,7 +33,7 @@ export function Nav(){
       </div>
       <div className='login-cart-btns'>
         <Link to={'/login'} className='noLine grey7'><div className={gg}>تسجيل الدخول </div></Link>
-      <Link to={'/'} className='noLine grey7'><div onClick={logout} className={aa}>تسجيل الخروج</div></Link>
+      <Link to={'/offers'} className='noLine grey7'><div onClick={logout} className={aa}>تسجيل الخروج</div></Link>
 
         <div className="line-nav"> </div>
         <Link to={'/cart'} className="noLine grey7"><div className='cart-nav'>{sum}ر.س<IoIosCart size={20}/></div></Link>
