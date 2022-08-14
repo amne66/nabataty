@@ -3,7 +3,7 @@ import ViewCart from "../components/cart";
 import { cartArr, ICart } from "../components/checkout";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
-import { Iplant, iPlants } from "../data/indoorPlant";
+import { iPlants } from "../data/indoorPlant";
 import { oPlants } from "../data/outdoorPlant";
 import { potsArr } from "../data/pots";
 import { iOffers } from "../data/summerOffers";

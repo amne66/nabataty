@@ -1,11 +1,23 @@
+import { getAuth } from 'firebase/auth';
 import { FiSearch } from 'react-icons/fi';
 import { IoIosArrowDown, IoIosCart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { cartArr } from './checkout';
-
+import { signOut } from 'firebase/auth';
+// import { auth } from '../firebaseSetup';
 export function Nav(){
+  
+  const auth = getAuth();
+  const user = auth.currentUser;
   const quantity = cartArr.length;
+ 
+  const am = user?.email === undefined
   const quantityClasses = quantity!==0  ? 'quantity-nav display' : 'hide';
+  const gg = am  ? 'login-btn-nav display' : 'hide';
+  const aa = am  ? 'hide' : 'login-btn-nav display';
+  const logout = async () => {
+    await signOut(auth);
+  };
 
   let sum = 0;
   for (let i = 0; i < cartArr.length; i++) {
@@ -18,7 +30,9 @@ export function Nav(){
       <div className="search-icon"><FiSearch/></div>
       </div>
       <div className='login-cart-btns'>
-        <Link to={'/login'} className='noLine grey7'><div className="login-btn-nav">تسجيل الدخول </div></Link>
+        <Link to={'/login'} className='noLine grey7'><div className={gg}>تسجيل الدخول </div></Link>
+      <Link to={'/'} className='noLine grey7'><div onClick={logout} className={aa}>تسجيل الخروج</div></Link>
+
         <div className="line-nav"> </div>
         <Link to={'/cart'} className="noLine grey7"><div className='cart-nav'>{sum}ر.س<IoIosCart size={20}/></div></Link>
         <div className={quantityClasses}>{quantity}</div>

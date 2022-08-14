@@ -779,8 +779,9 @@ width: 555px;
 }
 .prodact-contenr{
   padding-right: 10%;
-  padding: 30px;
-
+  /* padding: 30px; */
+ padding-top: 20px;
+ 
   }
 
 .cart-img{
@@ -789,7 +790,7 @@ width: 555px;
  
 } 
 table, th, td {
-  padding: 9px;
+  padding: 0px 9px ;
 }
 .icon-delete{
   padding-top: 55px;
@@ -1005,3 +1006,25 @@ text-align: center;
  background-color: rgb(231, 231, 231);
  
 }
+
+.grid-order{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  align-items: center; 
+  column-gap: 160px;
+  row-gap: 20px;
+  font-size: larger;
+  margin-top: 5%;
+}
+
+.grid-order2{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 200px;
+  row-gap: 30px;
+  font-size: large;
+}
+

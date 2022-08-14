@@ -2,10 +2,11 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../firebaseSetup";
 
 export interface IOrder {
-    orderStaus:string;
-    userEmail:string;
+    orderStaus:any;
+    userEmail:any;
+    id:string;
 }
-interface IOrderProps {
+export interface IOrderProps {
   data: IOrder; 
   id:String;
 }
