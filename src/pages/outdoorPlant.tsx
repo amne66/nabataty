@@ -1,7 +1,6 @@
 import { Layout } from "../components/Layout";
-import { OutdoorPLants } from "../components/outdoorPlants";
 import { Sidemenu } from "../components/Sidemenu";
-
+import { OutdoorPLant } from "../components/outdoorPlant";
 export function OutdoorPlantPage(){    
     return <>
     <Layout>
@@ -10,7 +9,7 @@ export function OutdoorPlantPage(){
         <Sidemenu />
        <div className="column-flex">
        <p className="indoor-plant-des"> مجموعة متنوعة من النباتات الخارجية التي يمكن استخدامها في الاماكن المفتوحة مثل حديقة المنزل او حول اسوار ومداخل المنزل</p>   
-        <OutdoorPLants />
+        <OutdoorPLant />
        </div>
     </div>
    </div>

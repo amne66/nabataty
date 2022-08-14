@@ -1,13 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import ViewCart from "../components/cart";
+import { cartArr, ICart } from "../components/checkout";
 import Footer from "../components/footer";
 import { Nav } from "../components/Nav";
-import { cartArr } from "../data/cart";
-import { iPlants } from "../data/indoorPlant";
+import { Iplant, iPlants } from "../data/indoorPlant";
 import { oPlants } from "../data/outdoorPlant";
 import { potsArr } from "../data/pots";
 import { iOffers } from "../data/summerOffers";
 import { toolsArr } from "../data/tools";
+
 
 export function ViewCartPage(){
   let sum = 0;
@@ -19,52 +20,58 @@ export function ViewCartPage(){
       let name = '' ;
       let price= 0;  
       let imageUrl='';
+      let idd ;
      
 if(type === 'pot'){
   const searchIndex = potsArr.find((pot) => pot.id === id); 
   if(searchIndex){
-    name = searchIndex.name;
-    price=searchIndex.price;
-    imageUrl=searchIndex.imageUrl;
+    idd=searchIndex.id;
+    name = searchIndex.data.name;
+    price=searchIndex.data.price;
+    imageUrl=searchIndex.data.imageUrl;
 }
 }else if(type === 'tool'){
   const searchIndex = toolsArr.find((tool) => tool.id === id); 
   if(searchIndex){
-    name = searchIndex.name;
-    price=searchIndex.price;
-    imageUrl=searchIndex.imageUrl;
+    idd=searchIndex.id;
+    name = searchIndex.data.name;
+    price=searchIndex.data.price;
+    imageUrl=searchIndex.data.imageUrl;
 }
 }else if (type === 'indoor'){
   const searchIndex = iPlants.find((indoorPlant) => indoorPlant.id === id); 
   if(searchIndex){
-    name = searchIndex.name;
-    price=searchIndex.price;
-    imageUrl=searchIndex.imageUrl;
+    idd=searchIndex.id;
+    name = searchIndex.data.name;
+    price=searchIndex.data.price;
+    imageUrl=searchIndex.data.imageUrl;
 }
 }else if(type ==='outdoor'){
   const searchIndex = oPlants.find((oudoorPlant) => oudoorPlant.id === id); 
   if(searchIndex){
-    name = searchIndex.name;
-    price=searchIndex.price;
-    imageUrl=searchIndex.imageUrl;
+    idd=searchIndex.id;
+    name = searchIndex.data.name;
+    price=searchIndex.data.price;
+    imageUrl=searchIndex.data.imageUrl;
 }}else if(type === 'offer'){
   const searchIndex = iOffers.find((offer) => offer.id === id); 
   if(searchIndex){
-    name = searchIndex.name;
-    price=searchIndex.newPrice;
-    imageUrl=searchIndex.imageUrl;}
+    idd=searchIndex.id;
+    name = searchIndex.data.name;
+    price=searchIndex.data.newPrice;
+    imageUrl=searchIndex.data.imageUrl;}
 }
 
 if( name !== ''){
   cartArr.push({
-    id: '22' ,
+    id:  idd,
     name: name,
     price: price,
     imageUrl: imageUrl,   
 })}
 for (let i = 0; i < cartArr.length; i++) {
   sum += cartArr[i].price;}  
-  const cartDev = cartArr.map((carts) => <ViewCart cart={carts} />);
+  const cartDev = cartArr.map((carts: ICart) => <ViewCart cart={carts} />);
       return <div>
         <Nav></Nav>
         <div className="cart-flex">

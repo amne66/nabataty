@@ -13,16 +13,16 @@ export function OutdoorDetailsPage(){
       let temperature= '';
       let description= '';
       let imageUrl='';
-      let id='';
+      let id;
      if(searchIndex){
         id = searchIndex.id;
-        name = searchIndex.name;
-        price=searchIndex.price;
-        watering=searchIndex.watering;
-        lighting =searchIndex.lighting;
-        temperature=searchIndex.temperature;
-        description=searchIndex.description;
-        imageUrl=searchIndex.imageUrl;
+        name = searchIndex.data.name;
+        price=searchIndex.data.price;
+        watering=searchIndex.data.watering;
+        lighting =searchIndex.data.lighting;
+        temperature=searchIndex.data.temperature;
+        description=searchIndex.data.description;
+        imageUrl=searchIndex.data.imageUrl;
     }
 return <>
 <Nav></Nav>
